@@ -28,10 +28,6 @@ const searchForm = document.querySelector('.search-form');
     });
 // }
 
-
-// document.querySelector('#card-btn').addEventListener('click', () => {
-//     cardItem.classList.toggle('active');
-// });
 document.querySelector('#card-btn').onclick = () => {
     cardItem.classList.toggle('active');
     navbar.classList.remove('active');
