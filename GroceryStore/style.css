@@ -9,7 +9,7 @@
     --outline: .1rem solid rgba(0, 0, 0, .1);
     --outline-hover: .2rem solid var(--black);
     --border: .2rem solid rgba(0, 0, 0, .1);
-    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
 }
 
 * {
@@ -19,11 +19,11 @@
     outline: none;
     border: none;
 
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-transform: capitalize;
 
-    transition: all .2s linear;
+    transition: all linear .2s;
 }
 
 html {
@@ -35,6 +35,27 @@ html {
 
 body {
     background: #eee;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--black);
+    padding: 2rem 0 3rem 0;
+}
+
+.heading span {
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+    position: relative;
+    z-index: -1;
 }
 
 .btn {
@@ -161,7 +182,7 @@ header .shopping-card {
     width: 35rem;
     padding: 1rem;
 
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     box-shadow: var(--box-shadow);
     background: #fff;
 }
@@ -236,7 +257,7 @@ header .login-form {
     right: -110%;
     width: 35rem;
     background: #fff;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding: 2rem;
     text-align: center;
@@ -275,7 +296,126 @@ header .login-form p a {
     text-decoration: underline;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
 
+.home .content {
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.home .content span {
+    color: var(--orange);
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: var(--light-color);
+    padding: 2rem 0;
+}
+
+.home .content btn:hover {
+    background: var(--orange);
+}
+
+.features .content .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.features .content .box-container .box {
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    padding: 3rem 2rem;
+    transition: linear .2s;
+}
+
+.features .content .box-container .box:hover {
+    outline-offset: 0;
+    outline: var(--outline-hover);
+}
+
+.features .content .box-container .box img {
+    height: 15rem;
+    margin: 1rem 0;
+}
+
+.features .content .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.features .content .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.products .products-slider {
+    padding: 1rem;
+}
+
+.products .products-slider:first-child {
+    margin-bottom: 2rem;
+}
+
+.products .products-slider .wrapper .box {
+    text-align: center;
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: linear .2s;
+}
+
+.products .products-slider .wrapper .box:hover {
+    outline-offset: 0;
+    outline: var(--outline-hover);
+}
+
+.products .products-slider .wrapper .box img {
+    height: 20rem;
+}
+
+.products .products-slider .wrapper .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.products .products-slider .wrapper .box .price {
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: .4rem 0;
+}
+
+.products .products-slider .wrapper .box .stars {
+    font-size: 1.7rem;
+    padding: .5rem 0;
+    color: var(--orange);
+}
 
 @media only screen and (max-width: 991px) {
     html {
@@ -283,6 +423,10 @@ header .login-form p a {
     }
 
     header {
+        padding: 2rem !important;
+    }
+
+    section {
         padding: 2rem;
     }
 }
@@ -322,36 +466,8 @@ header .login-form p a {
     html {
         font-size: 50%;
     }
+    
+    .heading {
+        font-size: 2.5rem;
+    }
 }
-
-
-/*
-header .user-form .box input {
-  margin: 1rem 0;
-}
-header .user-form button:hover {
-  background: var(--orange);
-}
-*/
-
-
-
-
-
-
-
-/*
-html::-webkit-scrollbar {
-    width: .8rem;
-}
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-html::-webkit-thumb {
-    background: #fff;
-    border-radius: 5rem;
-}
-section {
-    padding: 2rem 7%;
-}
-*/
