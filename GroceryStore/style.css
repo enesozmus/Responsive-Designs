@@ -29,8 +29,6 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
 }
 
 body {
@@ -89,6 +87,8 @@ header {
 
     background: #fff;
     box-shadow: var(--box-shadow);
+
+    z-index: 1000;
 }
 
 header .logo {
@@ -150,7 +150,7 @@ header .search-form {
 
 header .search-form.active {
     right: 2rem;
-    transition: .45s linear;
+    transition: .4s linear;
 }
 
 header .search-form input {
@@ -189,7 +189,7 @@ header .shopping-card {
 
 header .shopping-card.active {
     right: 2rem;
-    transition: .45s linear;
+    transition: .4s linear;
 }
 
 header .shopping-card.active {
@@ -265,7 +265,7 @@ header .login-form {
 
 header .login-form.active {
     right: 2rem;
-    transition: .45s linear;
+    transition: .4s linear;
 }
 
 header .login-form h3 {
@@ -417,6 +417,243 @@ header .login-form p a {
     color: var(--orange);
 }
 
+.categories .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem
+}
+
+.categories .box-container .box {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -1rem;
+}
+
+.categories .box-container .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.categories .box-container .box img {
+    height: 15rem;
+    margin: 1rem 0;
+}
+
+.categories .box-container .box h3 {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.categories .box-container .box p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.reviews .reviews-slider {
+    padding: 1rem;
+}
+
+.reviews .reviews-slider .wrapper .box {
+    text-align: center;
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: linear .2s;
+}
+
+.reviews .reviews-slider .wrapper .box:hover {
+    outline-offset: 0;
+    outline: var(--outline-hover);
+}
+
+.reviews .reviews-slider .wrapper .box img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.reviews .reviews-slider .wrapper .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.reviews .reviews-slider .wrapper .box h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.reviews .reviews-slider .wrapper .box .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.blogs .box-container .box img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.blogs .box-container .box .content .icons a {
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons a:hover {
+    color: var(--black);
+}
+
+.blogs .box-container .box .content .icons a i {
+    color: var(--orange);
+    margin-right: .5rem;
+}
+
+.blogs .box-container .box .content h3 {
+    font-size: 2.2rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: .5rem 0;
+}
+
+footer {
+    background: #fff;
+    padding: 2rem 9%;
+}
+
+footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+footer .box-container .box h3 i {
+    color: var(--orange);
+}
+
+footer .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    color: var(--black);
+    background: #eee;
+    margin-left: .2rem;
+}
+
+footer .box-container .box .share a:hover {
+    /* color: var(--orange); */
+    background: var(--orange);
+    color: #fff;
+}
+
+footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+footer .box-container .box .links i {
+    color: var(--orange);
+    padding-right: .5rem;
+}
+
+footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+}
+
+footer .box-container .box .email {
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+footer .box-container .box .payment-img {
+    display: block;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+footer .credits {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 1rem 0;
+    padding: 3rem 0;
+    color: var(--black);
+    border-top: var(--border);
+}
+
+footer .credits span {
+    color: var(--orange);
+}
+
+
 @media only screen and (max-width: 991px) {
     html {
         font-size: 55%;
@@ -452,7 +689,7 @@ header .login-form p a {
 
     header nav.active {
         right: 2rem;
-        transition: .45s linear;
+        transition: .4s linear;
     }
 
     header nav a {
@@ -466,8 +703,12 @@ header .login-form p a {
     html {
         font-size: 50%;
     }
-    
+
     .heading {
         font-size: 2.5rem;
+    }
+
+    footer {
+        text-align: center;
     }
 }

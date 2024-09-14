@@ -7,6 +7,11 @@
 
 ## ❤️ What We are Building
 - [x] Coffee Shop
+- [x] Grocery Store
 
-### 📹 Screen Recordings
-<video src='https://github.com/user-attachments/assets/f208e99f-029b-47a1-a624-cc3509cada15'>
+## 📹 Screen Recordings
+### Coffee Shop
+https://github.com/user-attachments/assets/f208e99f-029b-47a1-a624-cc3509cada15
+  
+### Grocery Store
+https://github.com/user-attachments/assets/97cee2a7-08be-4652-8884-4cf578923ede
