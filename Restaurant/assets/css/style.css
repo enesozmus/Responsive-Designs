@@ -515,11 +515,6 @@ address {
     z-index: -1;
 }
 
-/*--==============================--*/
-.w-100 {
-    width: 100%;
-}
-
 .move-anim {
     animation: move 5s linear infinite;
 }
@@ -535,6 +530,12 @@ address {
     }
 }
 
+/*--==============================--*/
+.w-100 {
+    width: 100%;
+}
+
+/*--==============================--*/
 .has-bg-image {
     background-repeat: no-repeat;
     background-size: cover;
@@ -1078,8 +1079,8 @@ address {
   #ABOUT
 \*-----------------------------------*/
 .about .container {
-    grid-template-columns: 0.7fr 1fr;
-    gap: 30px;
+    display: grid;
+    gap: 120px;
 }
 
 .about .section-text {
@@ -1089,11 +1090,6 @@ address {
 .about .btn {
     margin-inline: auto;
     margin-block-start: 26px;
-}
-
-.about .container {
-    display: grid;
-    gap: 120px;
 }
 
 .about-banner {
@@ -1388,5 +1384,30 @@ address {
     .service .container {
         max-width: 420px;
         margin-inline: auto;
+    }
+
+    /*--=============== About ===============--*/
+    .about .container {
+        gap: 80px;
+    }
+
+    .about-banner > .w-100 {
+        padding-inline-start: 90px;
+    }
+
+    .about .abs-img-1 {
+        width: 285px;
+    }
+
+    .about .contact-number {
+        --fontSize-body-1: 2.4rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /*--=============== About ===============--*/
+    .about .container {
+        grid-template-columns: 0.7fr 1fr;
+        gap: 30px;
     }
 }
