@@ -69,6 +69,7 @@ window.addEventListener("scroll", function () {
   } else {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
+    header.classList.remove("hide");
   }
 });
 
