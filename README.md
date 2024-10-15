@@ -11,7 +11,7 @@
 
 -   [x] Coffee Shop
 -   [x] Grocery Store
--   [x] Restaurant - Amazing & Delicious Food
+-   [x] Restaurant - Amazing & Delicious Food 🎉 [Published](https://restaurant-enes-ozmus.netlify.app/)
 
 ## 📹 Screen Recordings
 
@@ -22,3 +22,7 @@ https://github.com/user-attachments/assets/f208e99f-029b-47a1-a624-cc3509cada15
 ### Grocery Store
 
 https://github.com/user-attachments/assets/97cee2a7-08be-4652-8884-4cf578923ede
+
+### Restaurant - Amazing & Delicious Food
+
+![Restaurant Desktop Demo](./Restaurant/assets/images/desktop.png 'Desktop Demo')
