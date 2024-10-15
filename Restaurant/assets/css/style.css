@@ -1605,12 +1605,15 @@ textarea.input-field {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+/**
+ * responsive for larger than 575px screen
+ */
 @media only screen and (min-width: 575px) {
     :root {
         --fontSize-body-2: 2rem;
     }
 
-    /*--=============== Reused Style ===============--*/
+    /*--=============== Reused Style =========--*/
     :is(.service, .about) .section-text {
         max-width: 420px;
         margin-inline: auto;
@@ -1687,18 +1690,18 @@ textarea.input-field {
         margin-inline-start: auto;
     }
 
-    /*--=============== Hero ===============--*/
+    /*--=============== Hero =================--*/
     .hero-btn {
         transform: scale(0.7);
     }
 
-    /*--=============== Service ===============--*/
+    /*--=============== Service ==============--*/
     .service .container {
         max-width: 420px;
         margin-inline: auto;
     }
 
-    /*--=============== About ===============--*/
+    /*--=============== About ================--*/
     .about .container {
         gap: 80px;
     }
@@ -1715,7 +1718,7 @@ textarea.input-field {
         --fontSize-body-1: 2.4rem;
     }
 
-    /*--=============== Menu ===============--*/
+    /*--=============== Menu =================--*/
     .menu-card .title-wrapper {
         display: flex;
         justify-content: flex-start;
@@ -1742,12 +1745,13 @@ textarea.input-field {
         border-block: 1px solid var(--white-alpha-20);
     }
 
-    /*--=============== Event ===============--*/
+    /*--=============== Event ================--*/
     .event .container {
         max-width: 420px;
         margin-inline: auto;
     }
 
+    /*--=============== Footer ===============--*/
     .footer-brand > * {
         max-width: 460px;
         margin-inline: auto;
