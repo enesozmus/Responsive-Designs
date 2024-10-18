@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <!-- ========= Remix Icon ========= -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <!-- ========= Animate on scroll  ========= -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- ========= CSS ========= -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -24,6 +26,230 @@
 
 <body>
 
+  <!-- ========= Header ========= -->
+  <header>
+    <!-- 1 -->
+    <a href="" class="logo">
+      <img src="./assets/images/logo.png" alt="Wood | Logo">
+    </a>
+    <!-- 2 -->
+    <nav class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+      <a href="#exhibition">Exhibitions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <!-- 3 -->
+    <div class="nav-side">
+      <a href="" class="n-btn">Say Hello</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+
+  <!-- ========= Home ========= -->
+  <section class="home" id="home">
+    <!-- 1 -->
+    <div class="home-text" data-aos="fade-up" data-aos-duration="1400">
+      <!-- 1 -->
+      <h4>Carving Art</h4>
+      <!-- 2 -->
+      <h1>Bringing <br> Wood To Life</h1>
+      <!-- 3 -->
+      <p>Expertly carved wooden sculptures and figurines that showcase the natural beauty and versatility of wood</p>
+    </div>
+    <!-- 2 -->
+    <img src="./assets/images/hero.png" alt="Wood | Main" class="home-img" data-aos="zoom-in" data-aos-duration="2000">
+    <!-- 3 -->
+    <div class="social-links">
+      <a href="" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="200">
+        <i class="ri-instagram-fill"></i>
+      </a>
+      <a href="" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="450">
+        <i class="ri-github-fill"></i>
+      </a>
+      <a href="" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="650">
+        <i class="ri-youtube-fill"></i>
+      </a>
+      <a href="" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="850">
+        <i class="ri-twitter-x-fill"></i>
+      </a>
+    </div>
+    <!-- 4 -->
+    <div class="arrow-box" data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">
+      <a href="#about"><i class="ri-arrow-down-line"></i></a>
+    </div>
+  </section>
+
+
+  <!-- ========= About ========= -->
+  <section class="about" id="about">
+    <!-- 1 -->
+    <img src="./assets/images/about.png" alt="about" class="about-img" data-aos="zoom-in" data-aos-duration="2000">
+    <!-- 2 -->
+    <div class="about-text" data-aos="fade-up" data-aos-duration="1400">
+      <!-- 1 -->
+      <h2>Wood is my <br> Passion</h2>
+      <!-- 2 -->
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempora repellat delectus ullam cupiditate
+        aperiam in eum eius amet minima ut, nemo accusantium? Molestias iure tempore quo laboriosam reiciendis non,
+        neque commodi pariatur voluptas similique reprehenderit amet corrupti ex? Perspiciatis facere hic quis natus
+        nisi!
+      </p>
+      <!-- 3 -->
+      <a href="#shop" class="btn">View My Work</a>
+    </div>
+  </section>
+
+
+  <!-- ========= Shop ========= -->
+  <section class="shop" id="shop">
+    <!-- 1 -->
+    <div class="head-text" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200">
+      <!-- 1 -->
+      <div class="head-left">
+        <h4>Best Selling</h4>
+      </div>
+      <!-- 2 -->
+      <div class="head-right">
+        <h4>Offer up to 50%</h4>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="shop-content" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+      <!-- 1 -->
+      <div class="box">
+        <!-- 1 -->
+        <div class="box-img">
+          <img src="./assets/images/s1.png" alt="figure-1">
+        </div>
+        <!-- 2 -->
+        <h3>Figurines</h3>
+        <!-- 3 -->
+        <h5>View Gallery</h5>
+        <!-- 4 -->
+        <div class="cart">
+          <a href=""><i class="ri-shopping-cart-2-line"></i></a>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="box">
+        <!-- 1 -->
+        <div class="box-img">
+          <img src="./assets/images/s2.png" alt="figure-2">
+        </div>
+        <!-- 2 -->
+        <h3>Furniture</h3>
+        <!-- 3 -->
+        <h5>View Gallery</h5>
+        <!-- 4 -->
+        <div class="cart">
+          <a href=""><i class="ri-shopping-cart-2-line"></i></a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="box">
+        <!-- 1 -->
+        <div class="box-img">
+          <img src="./assets/images/s1.png" alt="figure-1">
+        </div>
+        <!-- 2 -->
+        <h3>Figurines</h3>
+        <!-- 3 -->
+        <h5>View Gallery</h5>
+        <!-- 4 -->
+        <div class="cart">
+          <a href=""><i class="ri-shopping-cart-2-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========= Exhibitions ========= -->
+  <section class="exhibition" id="exhibition">
+    <!-- 1 -->
+    <div class="head-text" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+      <!-- 1 -->
+      <div class="head-left">
+        <h4>Exhibitions</h4>
+      </div>
+      <!-- 2 -->
+      <div class="head-right">
+        <h4>& Events</h4>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="exb-content">
+      <!-- 1 -->
+      <img src="./assets/images/exb.png" alt="exhibition" class="exb-img" data-aos="zoom-in" data-aos-duration="1400">
+      <!-- 2 -->
+      <div class="exb-text" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+        <!-- 1 -->
+        <div class="row">
+          <h5>Whispers in Wood: An Exploration of Nature's Beauty</h5>
+          <a href="">14 Oct 2024 - 18 Oct 2024</a>
+        </div>
+        <!-- 2 -->
+        <div class="row">
+          <h5>Whispers in Wood: An Exploration of Nature's Beauty</h5>
+          <a href="">14 Oct 2024 - 18 Oct 2024</a>
+        </div>
+        <!-- 3 -->
+        <div class="row">
+          <h5>Whispers in Wood: An Exploration of Nature's Beauty</h5>
+          <a href="">14 Oct 2024 - 18 Oct 2024</a>
+        </div>
+        <!-- 4 -->
+        <div class="row">
+          <h5>Whispers in Wood: An Exploration of Nature's Beauty</h5>
+          <a href="">14 Oct 2024 - 18 Oct 2024</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========= Contact ========= -->
+  <section class="contact" id="contact">
+    <div class="contact-content" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400">
+      <!-- 1 -->
+      <h2>Let's Talk</h2>
+      <!-- 2 -->
+      <hr>
+      <!-- 3 -->
+      <p>Great Russell St, London WC1B 3DG, United Kingdom</p>
+      <!-- 4 -->
+      <div class="s-links">
+        <a href=""><i class="s-btn"></i>Youtube</a>
+        <a href=""><i class="s-btn"></i>Github</a>
+        <a href=""><i class="s-btn"></i>X-Twitter</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========= Footer ========= -->
+  <footer class="footer" id="footer">
+    <div class="copyright">
+      Developed by <span>enesozmus</span> inspired by <span>Tahmid Ahmed<span>
+    </div>
+    <div class="scroll-btn">
+      <a href="#"><i class="ri-arrow-up-line"></i></a>
+    </div>
+  </footer>
+
+
+
+  <!-- ========= Animate on scroll  ========= -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 1
+    });
+  </script>
   <!-- ========= JavaScript ========= -->
   <script src="./assets/js/script.js"></script>
 </body>
